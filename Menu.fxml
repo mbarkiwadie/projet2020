@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="MenuPane" prefHeight="650.0" prefWidth="824.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mg.MenuController">
+   <children>
+      <BorderPane fx:id="menuPane" layoutX="2.0" layoutY="1.0" prefHeight="650.0" prefWidth="824.0">
+         <top>
+            <MenuBar prefHeight="41.0" prefWidth="776.0" BorderPane.alignment="CENTER">
+               <menus>
+                  <Menu mnemonicParsing="false" style="-fx-text-fil: green;" text="Client">
+                     <items>
+                        <MenuItem id="Nclient" fx:id="nouveauClient" mnemonicParsing="false" onAction="#nClient" text="nouveau">
+                           <accelerator>
+                              <KeyCodeCombination alt="ANY" code="A" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator>
+                        </MenuItem>
+                        <MenuItem mnemonicParsing="false" text="ancien" />
+                        <MenuItem fx:id="listeClient" mnemonicParsing="false" onAction="#listeClient" text="liste" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Fournisseur">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="nouveau" />
+                        <MenuItem mnemonicParsing="false" text="ancien " />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Caisse">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="ouvrir" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Stock">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="ajouter produit" />
+                        <MenuItem mnemonicParsing="false" text="etat produit" />
+                        <MenuItem mnemonicParsing="false" text="alerte stock" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Statistiques">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="client" />
+                        <MenuItem mnemonicParsing="false" text="vente" />
+                        <MenuItem mnemonicParsing="false" text="achat" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="a-propos">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="about" />
+                     </items>
+                  </Menu>
+               </menus>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </MenuBar>
+         </top>
+         <left>
+            <VBox prefHeight="609.0" prefWidth="165.0" spacing="20.0" style="-fx-background-color: yellow;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label id="lblDate" fx:id="lblDate" prefHeight="33.0" prefWidth="148.0">
+                     <font>
+                        <Font name="Arial Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label id="lblHeure" fx:id="lblHeure" prefHeight="34.0" prefWidth="152.0">
+                     <font>
+                        <Font name="Arial Bold" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label id="lblAgent" fx:id="lblAgent" prefHeight="37.0" prefWidth="148.0">
+                     <font>
+                        <Font name="Arial Bold" size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+               <padding>
+                  <Insets left="10.0" top="40.0" />
+               </padding>
+            </VBox>
+         </left>
+         <center>
+            <ImageView fitHeight="607.0" fitWidth="659.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../images/MG.jpg" />
+               </image>
+            </ImageView>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

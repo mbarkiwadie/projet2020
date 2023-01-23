@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-border-color: black;" xmlns="http://javafx.com/javafx/8.0.66" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mg.AncienClientController">
+   <children>
+      <Pane fx:id="nClientPane" layoutX="10.0" layoutY="10.0" prefHeight="613.0" prefWidth="825.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-insets: 20;">
+         <children>
+            <Text fill="#f50e0e" layoutX="300.0" layoutY="16.0" stroke="#f53131" strokeType="OUTSIDE" strokeWidth="0.2" text="consulter un Client" translateY="20.0" wrappingWidth="260.11328125">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Text>
+            <Label layoutX="29.0" layoutY="94.0" prefHeight="29.0" prefWidth="162.0" text="Numéro de  la carte  : ">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="453.0" layoutY="94.0" prefHeight="29.0" prefWidth="162.0" text="Prénom : ">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="138.0" prefHeight="29.0" prefWidth="162.0" text="Nom  : ">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="453.0" layoutY="138.0" prefHeight="29.0" prefWidth="162.0" text="CIN  : ">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="181.0" prefHeight="29.0" prefWidth="162.0" text="Tel : ">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="453.0" layoutY="181.0" prefHeight="29.0" prefWidth="162.0" text="Mail : ">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="269.0" prefHeight="29.0" prefWidth="162.0" text="Adresse :">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="223.0" prefHeight="29.0" prefWidth="162.0" text="Profession  : ">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField layoutX="183.0" layoutY="96.0" prefHeight="25.0" prefWidth="195.0" />
+            <TextField layoutX="589.0" layoutY="96.0" prefHeight="25.0" prefWidth="195.0" />
+            <TextField layoutX="183.0" layoutY="140.0" prefHeight="25.0" prefWidth="195.0" />
+            <TextField layoutX="589.0" layoutY="140.0" prefHeight="25.0" prefWidth="195.0" />
+            <TextField layoutX="183.0" layoutY="183.0" prefHeight="25.0" prefWidth="195.0" />
+            <TextField layoutX="589.0" layoutY="183.0" prefHeight="25.0" prefWidth="195.0" />
+            <TextField layoutX="183.0" layoutY="271.0" prefHeight="25.0" prefWidth="601.0" />
+            <TextField layoutX="183.0" layoutY="225.0" prefHeight="25.0" prefWidth="195.0" />
+            <Button layoutX="508.0" layoutY="323.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="162.0" style="-fx-background-color: red; -fx-background-radius: 12; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0,6),6,0,0,1);;" text="Annuler">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Button>
+            <Button layoutX="102.0" layoutY="323.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="162.0" style="-fx-background-color: green; -fx-text-fill: white; -fx-background-radius: 12; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0,6),6,0,0,1);;" stylesheets="@../../../GestionMarket/src/gestionmarket/Style.css" text="Valider">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Button>
+            <Label layoutX="441.0" layoutY="223.0" prefHeight="29.0" prefWidth="162.0" text="Date de naissance  : ">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <DatePicker layoutX="589.0" layoutY="225.0" prefHeight="25.0" prefWidth="195.0" />
+            <ComboBox id="cmbRechercher" fx:id="cmbRechercher" layoutX="183.0" layoutY="49.0" prefWidth="150.0" />
+            <TextField layoutX="379.0" layoutY="49.0" />
+            <Button layoutX="577.0" layoutY="49.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="136.0" text="rechercher" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
